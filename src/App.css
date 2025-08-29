@@ -1,0 +1,134 @@
+/* Allura font utility for heading */
+/* Dancing Script font utility for heading */
+.balloon-header-parent {
+  height: clamp(70vh, 90vw, 95vh);
+  min-height: 70vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.balloon-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+  pointer-events: none;
+}
+.balloon-header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+.balloon-header-img {
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+  object-fit: cover;
+  object-position: top right;
+  display: block;
+}
+.balloon-header-gradient {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  pointer-events: none;
+}
+/* Birthday header styles */
+.birthday-header {
+  width: 100%;
+  height: 100vh;
+  min-height: 320px;
+  background-image: url("/BalloonImage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.birthday-header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 60%;
+  min-width: 320px;
+  height: 100%;
+}
+
+@media (max-width: 950px) {
+  .birthday-header-content {
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+  }
+}
+/* Header image full view */
+.header-image-full {
+  max-height: 70vh !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0.1rem;
+  text-align: center;
+  background: #000;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add font-family to body or #root for global font */
+body,
+#root {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background: #000;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 1em;
+}
+
+.read-the-docs {
+  color: #888;
+}
