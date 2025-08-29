@@ -10,12 +10,12 @@ export default defineConfig({
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
       manifest: {
         name: "Happy 60, Dad!",
-        short_name: "Dad@60",
+        short_name: "Happy 60th",
         description: "Photos, messages, and surprises for your 60th 🎉",
         start_url: "/",
         display: "standalone",
         background_color: "#ffffff",
-        theme_color: "#0ea5e9",
+        theme_color: "#e9990eff",
         icons: [
           { src: "/pwa-192.png", sizes: "192x192", type: "image/png" },
           { src: "/pwa-512.png", sizes: "512x512", type: "image/png" },

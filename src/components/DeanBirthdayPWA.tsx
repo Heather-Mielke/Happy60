@@ -73,16 +73,7 @@ const DeanBirthdayPWA = (): JSX.Element => {
                 }
               }
             `}</style>
-            <h1
-              className="text-5xl md:text-7xl lg:text-8xl mb-2 text-left font-hurricane"
-              style={{
-                fontFamily: "Cormorant Garamond, serif",
-                fontWeight: "bold",
-                textTransform: "uppercase",
-                lineHeight: 1.1,
-                marginTop: "10rem",
-              }}
-            >
+            <h1 className="text-5xl md:text-7xl lg:text-8xl mb-2 text-left main-header header-glow">
               Cheers to 60 Years
             </h1>
             <h2
