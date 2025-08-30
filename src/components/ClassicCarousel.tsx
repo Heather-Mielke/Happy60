@@ -64,14 +64,14 @@ const ClassicCarousel = () => {
   }, []);
 
   return (
-    <div className="relative">
-      <div className="bg-black/90 backdrop-blur-lg rounded-md p-2 shadow-2xl border-2 border-black">
-        <div className="relative overflow-hidden rounded-2xl">
+    <div className="relative flex items-center justify-center min-h-[32rem]">
+      <div className="bg-black/90 backdrop-blur-lg rounded-md p-2 shadow-2xl border-2 border-black w-full">
+        <div className="relative overflow-hidden rounded-2xl flex items-center justify-center min-h-[32rem]">
           <img
             src={`/${dadImages[currentPhoto]}`}
             alt={`Dean photo ${currentPhoto + 1}`}
-            className="w-full h-[32rem] object-contain object-center transition-all duration-700 hover:scale-110 hover:rotate-1 bg-black"
-            style={{ objectPosition: "top" }}
+            className="max-w-full max-h-[32rem] object-contain object-center transition-all duration-700 hover:scale-110 hover:rotate-1 bg-black mx-auto"
+            style={{ objectPosition: "center" }}
           />
           {/* Carousel Navigation */}
           <button
