@@ -8,6 +8,12 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
+      includeAssets: [
+        "favicon.ico",
+        "apple-touch-icon.png",
+        "mask-icon.svg",
+        "d.svg",
+      ],
       manifest: {
         name: "Happy 60, Dad!",
         short_name: "Happy 60th",
@@ -24,6 +30,12 @@ export default defineConfig({
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",
+          },
+          {
+            src: "/d.svg",
+            sizes: "512x512",
+            type: "image/svg+xml",
+            purpose: "any",
           },
         ],
       },
